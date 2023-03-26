@@ -1,0 +1,29 @@
+.sps-stats {
+    margin-left: 50px;
+}
+
+.sps-stats img {
+    width: 60px;
+    height: 60px;
+    margin: auto 20px auto 0;
+}
+
+.sps-stats-calories, .sps-stats-protein, .sps-stats-carbohydrates, .sps-stats-lipids {
+    display: flex;
+    background-color: #f3f3f3;
+    margin-bottom: 35px;
+    padding: 10px 60px 10px 30px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1450px) {
+    .sps-stats {
+        margin-top: 50px;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sps-stats article {
+        margin-right: 50px;
+    }
+}

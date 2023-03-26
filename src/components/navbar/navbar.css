@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sps-navbar {
+    font-size: 24px;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.sps-navbar-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 10% 0 15%;
+}
+
+.sps-navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sps-navbar-logo {
+    width: 180px;
+}

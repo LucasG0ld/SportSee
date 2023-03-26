@@ -1,0 +1,123 @@
+.sps-activity {
+    width: 60%;
+}
+
+.sps-activity-daily {
+    padding: 25px 30px;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.sps-activity-daily-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sps-activity-daily-text > p {
+    font-weight: bold;
+}
+
+.sps-activity-daily-text > div {
+    gap: 50px;
+}
+
+.sps-activity-daily-text > div, .sps-activity-daily-text > div p  {
+    display: flex;
+    align-items: center;
+}
+
+.sps-activity-daily-round-black {
+    background-color: #282D30;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.sps-activity-daily-round-red {
+    background-color: #E60000;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+.sps-activity-daily-custom-tooltip {
+    margin-top: -20px;
+    background-color: #E60000;
+    padding: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.sps-activity-average-custom-tooltip {
+    background-color: #FFF;
+    padding: 10px;
+    font-size: 12px;
+    color: #000;
+    width: 50px;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sps-activity-average-custom-tooltip > p {
+    margin: 0;
+    padding: 0!important;
+}
+
+.sps-activity-time {
+    height: 265px;
+    width: 30%;
+    background-color: #FF0000;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sps-activity-time > p, .sps-activity-score > p {
+    padding: 30px 35px 5px 35px;
+    margin: 0;
+}
+
+.sps-activity-score > p {
+    font-weight: bold;
+}
+
+.sps-activity-trio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sps-activity-resume {
+    height: 265px;
+    width: 30%;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #282D30;
+    position: relative;
+}
+
+.sps-activity-score {
+    height: 265px;
+    width: 30%;
+    color: #20253A;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.sps-activity-score .recharts-wrapper {
+    position: absolute!important;
+    top: 20px
+}
+
+@media screen and (max-width: 1450px) {
+    .sps-activity {
+        width:85%;
+    }
+}

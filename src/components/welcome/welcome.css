@@ -1,0 +1,16 @@
+.sps-welcome {
+    margin-bottom: 50px;
+}
+
+.sps-welcome h1 {
+    font-size: 48px;
+}
+
+.sps-welcome h1 span {
+    color: #FF0101;
+}
+
+.sps-welcome h2 {
+    font-size: 18px;
+    font-weight: 400;
+}

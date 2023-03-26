@@ -1,0 +1,14 @@
+{
+    "source": {
+      "include": ["src"],
+      "exclude": ["node_modules", "build", "public"]
+    },
+    "plugins": [],
+    "opts": {
+      "template": "node_modules/@jsdoc/salty",
+      "encoding": "utf8",
+      "recurse": true,
+      "destination": "docs/",
+      "templatePath": "F:/Dev/SportSeeTest/node_modules/@jsdoc/salty/lib"
+    }
+  }

@@ -1,0 +1,27 @@
+.sps-aside {
+    background-color: black;
+    display: flex;
+    color: #fff;
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sps-aside nav {
+    margin-bottom: 100px;
+}
+
+.sps-aside img {
+    margin-bottom: 15px;
+}
+
+
+.sps-aside p {
+    transform: rotate(-90deg);
+    width: 185px;
+    font-size: 12px;
+}

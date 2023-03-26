@@ -1,0 +1,25 @@
+main {
+    height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    z-index: 100;
+}
+
+.sps-home-content-container {
+    margin: 70px 0 0 21%;
+}
+
+.sps-home-content-flex {
+    display: flex;
+    
+}
+
+@media screen and (max-width: 1450px) {
+    .sps-home-content-flex {
+        display: block;   
+    }
+}
