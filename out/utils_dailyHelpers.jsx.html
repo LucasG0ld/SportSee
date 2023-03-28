@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: utils/dailyHelpers.jsx</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: utils/dailyHelpers.jsx</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Creates chart data from user sessions.
+ * @param {Object} user - The user object to retrieve session data from.
+ * @param {Array.&lt;{day: string, kilogram: number, calories: number}>} user.sessions - The user's session data.
+ * @returns {Array.&lt;{dayIndex: number, day: string, kilogram: number, calories: number}>} An array of session data objects with dayIndex, day, kilogram, and calories properties.
+ */
 
+export const createChartData = (user) => {
+    if (!user) return [];
+    return user.sessions.map((session, index) => ({ dayIndex: index + 1, day: session.day, kilogram: session.kilogram, calories: session.calories }));
+}
+  
+export const createDays = (user) => {
+    if (!user) return [];
+    return user.sessions.map(session => session.day);
+}
+  
+export const createDynamicDays = (user) => {
+    if (!user) return [];
+    return Array.from({ length: createDays(user).length }, (_, i) => i + 1);
+}
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export const CustomTooltip = ({ active, payload, label }) => {
+    if (active &amp;&amp; payload &amp;&amp; payload.length) {
+      return (
+        &lt;div className="sps-activity-daily-custom-tooltip">
+          &lt;p>{`${payload[0].value}kg`}&lt;/p>
+          &lt;p>{`${payload[1].value}kCal`}&lt;/p>
+        &lt;/div>
+      );
+    }
+}</code></pre>
+        </article>
+    </section>
 
 
 
